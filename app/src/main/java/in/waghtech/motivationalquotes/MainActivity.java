@@ -8,15 +8,15 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.widget.Toast;
 import java.util.Arrays;
 import java.util.Collections;
 
 public class MainActivity extends AppCompatActivity {
-    verticalViewPager myPager;
+
     String[] quotes=
-            {
-                    "Don't cry because it's over, smile because it happened.",
+            {"Don't cry because it's over, smile because it happened.",
             "Be yourself, everyone else is already taken.",
             "Two things are infinite: the universe and human stupidity. And I'm not sure about the universe.",
             "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.",
@@ -1052,10 +1052,9 @@ public class MainActivity extends AppCompatActivity {
             "There is no mountain I cant climb. No tower too high. No plane that I can’t learn how to fly.", 
             "If you aren’t sincere with it, you shouldn’t say anything at all."
 
-
-
 };
 
+    verticalViewPager myPager;
     CardView cardView1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -1083,6 +1082,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "QUOTE SAVED", Toast.LENGTH_LONG).show();
             Bitmap ss=Bitmap.createBitmap(cardView1.getWidth(), cardView1.getHeight(), Bitmap.Config.ARGB_8888);
             Canvas canvas=new Canvas(ss);
+
             cardView1.draw(canvas);
             MediaStore.Images.Media.insertImage(
                     getContentResolver(),
@@ -1090,6 +1090,7 @@ public class MainActivity extends AppCompatActivity {
                     "Image",
                     "Captured ScreenShot"
             );
+
             this.cardView1 = null;
         }
     }

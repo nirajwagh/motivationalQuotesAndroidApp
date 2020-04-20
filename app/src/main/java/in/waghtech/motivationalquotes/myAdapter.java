@@ -13,15 +13,15 @@ import java.util.Random;
 
 public class myAdapter extends PagerAdapter {
 
-    Context context;
-    String[] quotes;
-    LayoutInflater inflater;
-    TextView textView;
-    Random random=new Random();
-    int i;
-    CallBack callBack;
+    private Context context;
+    private String[] quotes;
+    private LayoutInflater inflater;
+    private TextView textView;
+    private Random random=new Random();
+    private int i;
+    private CallBack callBack;
 
-    String[] background={"a","b","c","d","e","f","g","h","i","j","l","m","n","o","p","q","s"
+    private  String[] background={"a","b","c","d","e","f","g","h","i","j","l","m","n","o","p","q","s"
             ,"u","v","x","y","z","aa","bb","cc","ee","ff","gg","hh","jj","kk"
             ,"ll","mm","nn","pp","qq","ss","uu","vv","ww","xx","yy","zz","aaa","bbb"
             ,"ccc","ddd","eee","b1","b2","c1","c2","d1","d2","e1","e2","f1","f2","g1","g2","h1"

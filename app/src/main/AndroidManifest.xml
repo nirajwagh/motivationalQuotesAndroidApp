@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="in.waghtech.motivationalquotes">
+    xmlns:tools="http://schemas.android.com/apk/distribution"
+    xmlns:tools2="http://schemas.android.com/tools"
+    package="in.waghtech.motivationalquotes"
+    tools:ignore="LockedOrientationActivity">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -12,8 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".splash"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="sensorPortrait"
+            tools2:ignore="LockedOrientationActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +27,7 @@
         </activity>
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait"
-            >
+            tools2:ignore="LockedOrientationActivity">
 
         </activity>
     </application>

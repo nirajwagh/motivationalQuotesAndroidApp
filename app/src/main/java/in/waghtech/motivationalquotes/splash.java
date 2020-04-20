@@ -5,9 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
-import android.widget.ProgressBar;
-import com.github.ybq.android.spinkit.sprite.Sprite;
-import com.github.ybq.android.spinkit.style.ChasingDots;
+
 
 public class splash extends AppCompatActivity {
     @Override
@@ -16,9 +14,7 @@ public class splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         Handler handler=new Handler();
-        ProgressBar progressBar = findViewById(R.id.progress);
-        Sprite doubleBounce = new ChasingDots();
-        progressBar.setIndeterminateDrawable(doubleBounce);
+
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -26,6 +22,6 @@ public class splash extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 4500);
+        }, 1300);
     }
 }
