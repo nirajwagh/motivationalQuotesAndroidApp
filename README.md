@@ -7,7 +7,7 @@ Users can save quotes as images by long-pressing a quote.
 The app does not collect or store any user data.
 
 
-App Demo on Youtube: 
+App Demo on Youtube: https://youtu.be/Aih6oReHL5E
 
 Play Store: https://play.google.com/store/apps/details?id=in.waghtech.motivationalquotes
 
